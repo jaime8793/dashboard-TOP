@@ -9,26 +9,118 @@
   --Dark-Shade-02: #9d9d9d;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+p{
+  margin: auto 0;
 }
 
 body {
   background-color: -var(--White-Shade-01);
 }
-.dashboard{
-    display: Flex;
+.dashboard {
+  display: Flex;
 }
-.side-board{
-    width: clamp(200px, 20vw , 600px)
+.side-board {
+  width: clamp(200px, 10vw, 600px);
 }
-.logo-container{
-    display: flex;
-    border: 1px dotted;
+.logo-container {
+  display: flex;
+  //border: 1px dotted orange;
+}
+.logo {
+  margin: 4px;
+  margin-right: auto;
+
+  // border: 2px solid orange;
+}
+
+.ring-icon {
+  margin: 4px;
+}
+.avatar {
+  margin: 4px;
+}
+.trial{
+  width: 90%;
+  border-radius: 8px;
+  //border: 2px solid orange;
+  margin: 0 auto;
+  background: #c1c1c1;
+   padding: 4px;
+}
+.trial-sub-class{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.start-from-bottom{
+  //margin-top: auto;
+  border: 2px solid orange;
+  position: absolute;
+  bottom: 0;
+  width: clamp(200px, 10vw, 600px);
+}
+
+button {
+  background-color: #1928ce;
+  color: white;
+  padding: 6px;
+  border-radius: 8px;
+  margin: auto 0;
+ // justify-content: flex-end
 }
 
 .icon {
   width: 16px;
   height: 16px;
+  margin: 4px;
+}
+.icon-2 {
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+}
+.main-board{
+  width: 90vw;
+  display: grid;
+  gap: 24px
+  
+}
+.main-board > *{
+  border: 1px solid orange;
+}
+.greeting-name{
+  display: flex;
+}
+
+.sources{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.sources > *{
+  border:1px solid orange;
+  display: flex;
+}
+.notification-section{
+  display: flex;
+}
+
+.notification-section > *{
+  display:flex;
+  width: 50%;
+  border: 1px orange solid;
+}
+
+.my-meetings > *{
+  display: flex;
+}
+
+.my-meetings{
+  display: flex;
+  justify-content: space-between;
 }
